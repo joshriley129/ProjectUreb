@@ -1,0 +1,139 @@
+Begin Object Class=/Script/Engine.Material Name="M_LandscapeTilingTest"
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerCoords Name="MaterialExpressionLandscapeLayerCoords_0"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerCoords Name="MaterialExpressionLandscapeLayerCoords_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=4033.000000
+      MaterialExpressionEditorX=-1168
+      MaterialExpressionGuid=A656838249EB0CCEB6EE819D2D1270AC
+      Material=Material'"M_LandscapeTilingTest"'
+      Desc="Resolution"
+      bCommentBubbleVisible=True
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=4033.000000
+      MaterialExpressionEditorX=-1168
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=A656838249EB0CCEB6EE819D2D1270AC
+      Material=Material'"M_LandscapeTilingTest"'
+      Desc="Resolution"
+      bCommentBubbleVisible=True
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0"
+      A=(Expression=MaterialExpressionLandscapeLayerCoords'"M_LandscapeTilingTest:MaterialExpressionLandscapeLayerCoords_0"')
+      B=(Expression=MaterialExpressionConstant'"M_LandscapeTilingTest:MaterialExpressionConstant_0"')
+      MaterialExpressionEditorX=-995
+      MaterialExpressionEditorY=-74
+      MaterialExpressionGuid=FE03B14B4F053714712B67B4F9B1129F
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1"
+      A=(Expression=MaterialExpressionLandscapeLayerCoords'"M_LandscapeTilingTest:MaterialExpressionLandscapeLayerCoords_1"')
+      B=(Expression=MaterialExpressionConstant'"M_LandscapeTilingTest:MaterialExpressionConstant_1"')
+      MaterialExpressionEditorX=-992
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=FE03B14B4F053714712B67B4F9B1129F
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerCoords_0"
+      MappingScale=0.000500
+      MaterialExpressionEditorX=-1213
+      MaterialExpressionEditorY=-181
+      MaterialExpressionGuid=AF94D63B4AEBA35D8D01A29E1540E2AD
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerCoords_1"
+      MappingScale=0.050000
+      MaterialExpressionEditorX=-1216
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=AF94D63B4AEBA35D8D01A29E1540E2AD
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionTextureSample'"M_LandscapeTilingTest:MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionTextureSample'"M_LandscapeTilingTest:MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeTilingTest:MaterialExpressionMaterialFunctionCall_0"')
+      MaterialExpressionEditorX=-373
+      MaterialExpressionEditorY=21
+      MaterialExpressionGuid=5A6D5B1C4C838AF58511DC91C6AF7219
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.CameraDepthFade"'
+      FunctionInputs(0)=(ExpressionInputId=79FFEA6C4F3A46F51F8E50A349E4BB4B,Input=(Expression=MaterialExpressionScalarParameter'"M_LandscapeTilingTest:MaterialExpressionScalarParameter_0"',InputName="Fade Length"))
+      FunctionInputs(1)=(ExpressionInputId=D5EC0E2F4DB888679BFC2A8B921262ED,Input=(OutputIndex=-1,InputName="Fade Offset"))
+      FunctionInputs(2)=(ExpressionInputId=7B4195E6455691CA3782398687468578,Input=(OutputIndex=-1,InputName="For Vertex Shader"))
+      FunctionOutputs(0)=(ExpressionOutputId=160C00424E845E293F44DCBE13738CEE,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=9E91D7984A2ED358B2F612864C64F992
+      Material=Material'"M_LandscapeTilingTest"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=5000.000000
+      ParameterName="FadeLEngth"
+      ExpressionGUID=0F3935C94C76DF09D850B1B9A054C3C9
+      MaterialExpressionEditorX=-915
+      MaterialExpressionEditorY=-224
+      MaterialExpressionGuid=3B57795246EC1FD639562A8BE54907FD
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionDivide'"M_LandscapeTilingTest:MaterialExpressionDivide_0"')
+      Texture=Texture2D'"/Game/StarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D"'
+      MaterialExpressionEditorX=-736
+      MaterialExpressionEditorY=-80
+      MaterialExpressionGuid=1CD399404D8F98F4A0D5C6836051047D
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Coordinates=(Expression=MaterialExpressionDivide'"M_LandscapeTilingTest:MaterialExpressionDivide_1"')
+      Texture=Texture2D'"/Game/StarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D"'
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=1CD399404D8F98F4A0D5C6836051047D
+      Material=Material'"M_LandscapeTilingTest"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"')
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(2)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(3)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(4)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(5)=MaterialExpressionDivide'"MaterialExpressionDivide_0"'
+   Expressions(6)=MaterialExpressionLandscapeLayerCoords'"MaterialExpressionLandscapeLayerCoords_0"'
+   Expressions(7)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(8)=MaterialExpressionDivide'"MaterialExpressionDivide_1"'
+   Expressions(9)=MaterialExpressionLandscapeLayerCoords'"MaterialExpressionLandscapeLayerCoords_1"'
+   Expressions(10)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=A8057B104B585134B424E8B464136E82
+   ReferencedTextureGuids(0)=5F7EF89C4EC6D5650BED36ABCF29873F
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=4482CE074C5CECF2C5421593467E7F87
+End Object

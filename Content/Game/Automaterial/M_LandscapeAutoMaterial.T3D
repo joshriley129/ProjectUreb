@@ -1,0 +1,325 @@
+Begin Object Class=/Script/Engine.Material Name="M_LandscapeAutoMaterial"
+   Begin Object Class=/Script/Engine.MaterialExpressionBreakMaterialAttributes Name="MaterialExpressionBreakMaterialAttributes_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionBreakMaterialAttributes Name="MaterialExpressionBreakMaterialAttributes_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionBreakMaterialAttributes Name="MaterialExpressionBreakMaterialAttributes_2"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeGrassOutput Name="MaterialExpressionLandscapeGrassOutput_0"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerBlend Name="MaterialExpressionLandscapeLayerBlend_0"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerBlend Name="MaterialExpressionLandscapeLayerBlend_1"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerBlend Name="MaterialExpressionLandscapeLayerBlend_2"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerBlend Name="MaterialExpressionLandscapeLayerBlend_3"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerBlend Name="MaterialExpressionLandscapeLayerBlend_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_5"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionBreakMaterialAttributes_0"
+      MaterialAttributes=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_2"')
+      MaterialExpressionEditorX=-368
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=743B6AD541F1B747A74BE586986F3BDD
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionBreakMaterialAttributes_1"
+      MaterialAttributes=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_0"')
+      MaterialExpressionEditorX=-331
+      MaterialExpressionEditorY=197
+      MaterialExpressionGuid=28A54B5640F47B58203512B4AE5BF8EA
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionBreakMaterialAttributes_2"
+      MaterialAttributes=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_1"')
+      MaterialExpressionEditorX=-311
+      MaterialExpressionEditorY=-344
+      MaterialExpressionGuid=CF9BFB1E446BE70921921F9D896100E9
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeGrassOutput_0"
+      GrassTypes(0)=(GrassType=LandscapeGrassType'"/Game/Automaterial/Grass.Grass"',Input=(Expression=MaterialExpressionLandscapeLayerBlend'"M_LandscapeAutoMaterial:MaterialExpressionLandscapeLayerBlend_3"'))
+      GrassTypes(1)=(Name="Grass2",GrassType=LandscapeGrassType'"/Game/Automaterial/Grass2.Grass2"',Input=(Expression=MaterialExpressionLandscapeLayerBlend'"M_LandscapeAutoMaterial:MaterialExpressionLandscapeLayerBlend_4"'))
+      MaterialExpressionEditorX=1557
+      MaterialExpressionEditorY=733
+      MaterialExpressionGuid=402212B6461DD27067644A8C9AEF9665
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerBlend_0"
+      Layers(0)=(LayerName="Generated",LayerInput=(Expression=MaterialExpressionLinearInterpolate'"M_LandscapeAutoMaterial:MaterialExpressionLinearInterpolate_3"'))
+      Layers(1)=(LayerName="Grass",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',OutputIndex=3,Mask=1,MaskR=1))
+      Layers(2)=(LayerName="Dirt",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_1"',OutputIndex=3,Mask=1,MaskR=1))
+      Layers(3)=(LayerName="Stone",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_0"',OutputIndex=3,Mask=1,MaskR=1))
+      ExpressionGUID=20D69530472B9D5144EDDB9EC5572B12
+      MaterialExpressionEditorX=1376
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=75832AC7478BCD6AD94250BC23866B96
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerBlend_1"
+      Layers(0)=(LayerName="Generated",LayerInput=(Expression=MaterialExpressionLinearInterpolate'"M_LandscapeAutoMaterial:MaterialExpressionLinearInterpolate_1"'))
+      Layers(1)=(LayerName="Grass",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      Layers(2)=(LayerName="Dirt",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      Layers(3)=(LayerName="Stone",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      ExpressionGUID=75802D8E49C180348F96DAB129357FD4
+      MaterialExpressionEditorX=1376
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=75832AC7478BCD6AD94250BC23866B96
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerBlend_2"
+      Layers(0)=(LayerName="Generated",LayerInput=(Expression=MaterialExpressionLinearInterpolate'"M_LandscapeAutoMaterial:MaterialExpressionLinearInterpolate_5"'))
+      Layers(1)=(LayerName="Grass",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      Layers(2)=(LayerName="Dirt",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_1"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      Layers(3)=(LayerName="Stone",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_0"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      ExpressionGUID=2725CAD94868193624E324980C8FDE08
+      MaterialExpressionEditorX=1344
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=75832AC7478BCD6AD94250BC23866B96
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerBlend_3"
+      Layers(0)=(LayerName="Generated",LayerInput=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_4"',OutputIndex=2))
+      ExpressionGUID=1639A9EC4C7060EC59078A93F92C09CF
+      MaterialExpressionEditorX=1248
+      MaterialExpressionEditorY=736
+      MaterialExpressionGuid=6380C3864C695D71D9C98098D23831BA
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerBlend_4"
+      Layers(0)=(LayerName="Grass",LayerInput=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      ExpressionGUID=195211EE4E86ECDDAE4836BB5C61D912
+      MaterialExpressionEditorX=1328
+      MaterialExpressionEditorY=880
+      MaterialExpressionGuid=6380C3864C695D71D9C98098D23831BA
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_3"')
+      MaterialExpressionEditorX=624
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=AB1779A04361B2D6350A999ECB0E7234
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_1"
+      A=(Expression=MaterialExpressionLinearInterpolate'"M_LandscapeAutoMaterial:MaterialExpressionLinearInterpolate_0"')
+      B=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_4"')
+      MaterialExpressionEditorX=832
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=A9562E3A469DA0E0D38E9BAE20224249
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_2"
+      A=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_0"',OutputIndex=3,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_1"',OutputIndex=3,Mask=1,MaskR=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_3"')
+      MaterialExpressionEditorX=640
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=195CD1134E78DA04B30E309ACF693BD4
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_3"
+      A=(Expression=MaterialExpressionLinearInterpolate'"M_LandscapeAutoMaterial:MaterialExpressionLinearInterpolate_2"')
+      B=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',OutputIndex=3,Mask=1,MaskR=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_4"')
+      MaterialExpressionEditorX=864
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=77D45E9048429590C1C306BFD4145F62
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_4"
+      A=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_0"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_1"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_3"',OutputIndex=2)
+      MaterialExpressionEditorX=640
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=C24B6C12424453E868D530ACEE3CAFC7
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_5"
+      A=(Expression=MaterialExpressionLinearInterpolate'"M_LandscapeAutoMaterial:MaterialExpressionLinearInterpolate_4"')
+      B=(Expression=MaterialExpressionBreakMaterialAttributes'"M_LandscapeAutoMaterial:MaterialExpressionBreakMaterialAttributes_2"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeAutoMaterial:MaterialExpressionMaterialFunctionCall_4"',OutputIndex=2)
+      MaterialExpressionEditorX=880
+      MaterialExpressionEditorY=464
+      MaterialExpressionGuid=9D530EA7481C208AEDE46F9D321F04CF
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Game/Automaterial/MF_Dirt.MF_Dirt"'
+      FunctionOutputs(0)=(ExpressionOutputId=56D3C7F44B294E2B5C39D7903E2EA094,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-592
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=C62B169949D224D74C3822830D9581CB
+      Material=Material'"M_LandscapeAutoMaterial"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Game/Automaterial/MF_Grass.MF_Grass"'
+      FunctionOutputs(0)=(ExpressionOutputId=54A7274842F21C87D031DA8473F65B29,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=-400
+      MaterialExpressionGuid=99B7DCF347F6E35CD553508CB8615FA7
+      Material=Material'"M_LandscapeAutoMaterial"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_2"
+      MaterialFunction=MaterialFunction'"/Game/Automaterial/MF_Stone.MF_Stone"'
+      FunctionOutputs(0)=(ExpressionOutputId=91497BE2490F0C37F4CA55B509EEA966,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-624
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=80C1B6E34BD1980D18E921907345A396
+      Material=Material'"M_LandscapeAutoMaterial"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_3"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/AlphaBlend/WorldAlignedBlend.WorldAlignedBlend"'
+      FunctionInputs(0)=(ExpressionInputId=6D3749034E787D04CA6D8D895AA27A9A,Input=(OutputIndex=-1,InputName="In Explicit Normal"))
+      FunctionInputs(1)=(ExpressionInputId=E3A4301C436434490E223B87513D071D,Input=(OutputIndex=-1,InputName="In World Vector"))
+      FunctionInputs(2)=(ExpressionInputId=20A4BE744AF38C28A1ADD58DF92634A9,Input=(Expression=MaterialExpressionScalarParameter'"M_LandscapeAutoMaterial:MaterialExpressionScalarParameter_2"',InputName="Blend Sharpness"))
+      FunctionInputs(3)=(ExpressionInputId=E048A75748E487D951739B82A759B75A,Input=(Expression=MaterialExpressionScalarParameter'"M_LandscapeAutoMaterial:MaterialExpressionScalarParameter_3"',InputName="Blend Bias"))
+      FunctionInputs(4)=(ExpressionInputId=18897E8F4F28C30C12A23EBB1ED749D6,Input=(OutputIndex=-1,InputName="Clamped?"))
+      FunctionInputs(5)=(ExpressionInputId=7A4F1A9E49DA91ED50C635B9E6DF85E0,Input=(OutputIndex=-1,InputName="Alpha"))
+      FunctionOutputs(0)=(ExpressionOutputId=13B05FBC4E9D2B220EE526802BDF29B6,Output=(OutputName="Alpha"))
+      FunctionOutputs(1)=(ExpressionOutputId=3337EE784A98AF3E0CDD918200DC90C2,Output=(OutputName="w/Vertex Normals"))
+      FunctionOutputs(2)=(ExpressionOutputId=4432FEEA4C1D7316A578FBAB2D00C9C3,Output=(OutputName="w/ Explicit Normal"))
+      MaterialExpressionEditorX=64
+      MaterialExpressionEditorY=1360
+      MaterialExpressionGuid=FCD2678D4A4F2924224035AC4711E675
+      Material=Material'"M_LandscapeAutoMaterial"'
+      Outputs(0)=(OutputName="Alpha")
+      Outputs(1)=(OutputName="w/Vertex Normals")
+      Outputs(2)=(OutputName="w/ Explicit Normal")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_4"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/AlphaBlend/WorldAlignedBlend.WorldAlignedBlend"'
+      FunctionInputs(0)=(ExpressionInputId=6D3749034E787D04CA6D8D895AA27A9A,Input=(OutputIndex=-1,InputName="In Explicit Normal"))
+      FunctionInputs(1)=(ExpressionInputId=E3A4301C436434490E223B87513D071D,Input=(OutputIndex=-1,InputName="In World Vector"))
+      FunctionInputs(2)=(ExpressionInputId=20A4BE744AF38C28A1ADD58DF92634A9,Input=(Expression=MaterialExpressionScalarParameter'"M_LandscapeAutoMaterial:MaterialExpressionScalarParameter_5"',InputName="Blend Sharpness"))
+      FunctionInputs(3)=(ExpressionInputId=E048A75748E487D951739B82A759B75A,Input=(Expression=MaterialExpressionScalarParameter'"M_LandscapeAutoMaterial:MaterialExpressionScalarParameter_4"',InputName="Blend Bias"))
+      FunctionInputs(4)=(ExpressionInputId=18897E8F4F28C30C12A23EBB1ED749D6,Input=(OutputIndex=-1,InputName="Clamped?"))
+      FunctionInputs(5)=(ExpressionInputId=7A4F1A9E49DA91ED50C635B9E6DF85E0,Input=(OutputIndex=-1,InputName="Alpha"))
+      FunctionOutputs(0)=(ExpressionOutputId=13B05FBC4E9D2B220EE526802BDF29B6,Output=(OutputName="Alpha"))
+      FunctionOutputs(1)=(ExpressionOutputId=3337EE784A98AF3E0CDD918200DC90C2,Output=(OutputName="w/Vertex Normals"))
+      FunctionOutputs(2)=(ExpressionOutputId=4432FEEA4C1D7316A578FBAB2D00C9C3,Output=(OutputName="w/ Explicit Normal"))
+      MaterialExpressionEditorX=96
+      MaterialExpressionEditorY=-544
+      MaterialExpressionGuid=1E363B8042556DEC07A1B8BF537C4C90
+      Material=Material'"M_LandscapeAutoMaterial"'
+      Outputs(0)=(OutputName="Alpha")
+      Outputs(1)=(OutputName="w/Vertex Normals")
+      Outputs(2)=(OutputName="w/ Explicit Normal")
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=30.000000
+      ParameterName="StoneDirtSharp"
+      ExpressionGUID=D1086CD14A4C8B2D46A96BA9CD22CD6A
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=1376
+      MaterialExpressionGuid=1D6C7CF041717C40F3A1468E9E114465
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=-3.000000
+      ParameterName="StoneDirtBias"
+      ExpressionGUID=7C46FB90481424928578349A618CD1F2
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=1488
+      MaterialExpressionGuid=42CD2B644B2D52A022511A96EAEAA542
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_4"
+      DefaultValue=-5.000000
+      ParameterName="GrassDirtBias"
+      ExpressionGUID=ADDA67814AE58804132C5689BB323884
+      MaterialExpressionEditorX=-333
+      MaterialExpressionEditorY=-462
+      MaterialExpressionGuid=44835AF846D7FA09D24B85AC1498DD18
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_5"
+      DefaultValue=21.000000
+      ParameterName="GrassDirtSharp"
+      ExpressionGUID=598C75B044E830DEFAF4DABD590208AE
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=-544
+      MaterialExpressionGuid=4E49CA63499B6BD64EA062B3F0D32D33
+      Material=Material'"M_LandscapeAutoMaterial"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_1"')
+   Roughness=(Expression=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_0"')
+   Normal=(Expression=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_2"')
+   EditorX=2000
+   EditorY=192
+   Expressions(0)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(1)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(2)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_2"'
+   Expressions(3)=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"'
+   Expressions(4)=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_1"'
+   Expressions(5)=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_2"'
+   Expressions(6)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(7)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_3"'
+   Expressions(8)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(9)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   Expressions(10)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_1"'
+   Expressions(11)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_4"'
+   Expressions(12)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_4"'
+   Expressions(13)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_5"'
+   Expressions(14)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_2"'
+   Expressions(15)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_3"'
+   Expressions(16)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_4"'
+   Expressions(17)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_5"'
+   Expressions(18)=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_0"'
+   Expressions(19)=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_1"'
+   Expressions(20)=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_2"'
+   Expressions(21)=MaterialExpressionLandscapeGrassOutput'"MaterialExpressionLandscapeGrassOutput_0"'
+   Expressions(22)=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_3"'
+   Expressions(23)=MaterialExpressionLandscapeLayerBlend'"MaterialExpressionLandscapeLayerBlend_4"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=D63873054686895D27ECA8BCF1D8102A
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=59C070034D70FE920573CB9AA31AAEC6
+End Object

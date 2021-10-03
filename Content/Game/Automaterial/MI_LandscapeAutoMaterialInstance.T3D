@@ -1,0 +1,16 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="MI_LandscapeAutoMaterialInstance"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=2414B53E4E2E996D8CDB02AA61F4B9CF
+   Parent=Material'"/Game/Automaterial/M_LandscapeAutoMaterial.M_LandscapeAutoMaterial"'
+   ScalarParameterValues(0)=(ParameterInfo=(Name="GrassDirtBias"),ParameterValue=-10.456457,ExpressionGUID=ADDA67814AE58804132C5689BB323884)
+   ScalarParameterValues(1)=(ParameterInfo=(Name="GrassDirtSharp"),ParameterValue=23.000000,ExpressionGUID=598C75B044E830DEFAF4DABD590208AE)
+   ScalarParameterValues(2)=(ParameterInfo=(Name="StoneDirtBias"),ParameterValue=-13.912713,ExpressionGUID=7C46FB90481424928578349A618CD1F2)
+   ScalarParameterValues(3)=(ParameterInfo=(Name="StoneDirtSharp"),ParameterValue=34.000000,ExpressionGUID=D1086CD14A4C8B2D46A96BA9CD22CD6A)
+   ScalarParameterValues(4)=(ParameterInfo=(Name="RefractionDepthBias"))
+   BasePropertyOverrides=(OpacityMaskClipValue=0.333300)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=F6923A3241D87BDB9DEFE490F91D93F1
+End Object
